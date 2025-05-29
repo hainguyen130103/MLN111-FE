@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* color-scheme: light dark; */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .without-ring {
+    @apply focus-visible:outline-none;
+  }
+
+  .team-member {
+    @apply relative h-96 bg-center bg-cover flex flex-col items-center justify-center rounded-3xl bg-white/10 shadow-xl;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+.image-container {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.poppins {
+  font-family: "Poppins", serif;
+}
+
+.space-grotesk {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+}
+
+.orbitron {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+}
+
+.audiowide {
+  font-family: "Audiowide", serif;
+}
+
+.space-mono {
+  font-family: "Space Mono", serif;
+}
+
+.kanit {
+  font-family: "Kanit", serif;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
+
+.team-member > div {
+  background: linear-gradient(to top, #2b2b2b, #9198e500);
+  font-size: large;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.small-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+.small-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+
+.small-scrollbar::-webkit-scrollbar-thumb {
+  background: #8f8d8d5e;
+  border-radius: 20px;
+}
+
+.small-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #695e5ead;
+}
+
+.message-p p p,
+.message-p p ul {
+  padding: 10px 0px;
+}
+
+.message-p li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
