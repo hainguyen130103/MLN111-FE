@@ -51,7 +51,7 @@ export default function Header() {
         ))}
         <a
           target="_blank"
-          href="https://forms.gle/rGVA5KZQfkgrNWSJ7"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd1_THzdf6TSZRNcYKTvoK-ve-KZU7knZwoepdWWKoWGEMTKw/viewform?usp=dialog"
           className="group"
         >
           Góp ý
